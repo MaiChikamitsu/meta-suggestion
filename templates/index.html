@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPT モード選択</title>
+    <script>
+        function toggleUserInput() {
+            // モードの選択値を取得
+            const mode = document.getElementById("mode").value;
+            // ユーザー発言の入力欄
+            const userInputField = document.getElementById("user_input_field");
+
+            // 橋渡教示なしの場合、入力欄を隠す
+            if (mode === "no_bridging_teaching") {
+                userInputField.style.display = "none";  // 非表示にする
+            } else {
+                userInputField.style.display = "block";  // 表示する
+            }
+        }
+        
+        // ページロード時にモードに応じた初期表示設定
+        window.onload = function() {
+            toggleUserInput();  // 初回実行
+        }
+    </script>
+</head>
+<body>
+    <h1>メタサジェスチョン</h1>
+    <form action="/submit" method="POST">
+        <!-- モード選択 -->
+        <label for="mode">モードを選択:</label>
+        <select id="mode" name="mode" onchange="toggleUserInput()">
+            <option value="bridging_teaching">橋渡教示あり</option>
+            <option value="no_bridging_teaching">橋渡教示なし</option>
+            <option value="co_working">自由共同</option>
+        </select><br><br>
+
+        <!-- ユーザー発言の入力欄（divでラップして表示/非表示を切り替える） -->
+        <div id="user_input_field">
+            <label for="user_input">ユーザーの発言:</label>
+            <textarea id="user_input" name="user_input" rows="4" cols="50"></textarea><br><br>
+        </div>
+
+        <button type="submit">送信</button>
+    </form>
+</body>
+</html>
