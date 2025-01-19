@@ -1,48 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GPT モード選択</title>
     <script>
-        function toggleUserInput() {
-            // モードの選択値を取得
-            const mode = document.getElementById("mode").value;
-            // ユーザー発言の入力欄
-            const userInputField = document.getElementById("user_input_field");
+        function triggerSpeechToText() {
+            const form = document.createElement("form");
+            form.method = "POST";
+            form.action = "/speech_to_text";
 
-            // 橋渡教示なしの場合、入力欄を隠す
-            if (mode === "no_bridging_teaching") {
-                userInputField.style.display = "none";  // 非表示にする
-            } else {
-                userInputField.style.display = "block";  // 表示する
-            }
-        }
-        
-        // ページロード時にモードに応じた初期表示設定
-        window.onload = function() {
-            toggleUserInput();  // 初回実行
+            const metaInput = document.createElement("input");
+            metaInput.type = "hidden";
+            metaInput.name = "meta";
+            metaInput.value = document.getElementById("meta").value;
+
+            const typesInput = document.createElement("input");
+            typesInput.type = "hidden";
+            typesInput.name = "types";
+            typesInput.value = document.getElementById("types").value;
+
+            const modeInput = document.createElement("input");
+            modeInput.type = "hidden";
+            modeInput.name = "mode";
+            modeInput.value = document.getElementById("mode").value;
+
+            const quizInput = document.createElement("input");
+            quizInput.type = "hidden";
+            quizInput.name = "quiz";
+            quizInput.value = document.getElementById("quiz").value;
+
+            form.appendChild(typesInput);
+            form.appendChild(modeInput);
+            form.appendChild(quizInput);
+            form.appendChild(metaInput);
+            document.body.appendChild(form);
+            form.submit();
         }
     </script>
 </head>
 <body>
     <h1>メタサジェスチョン</h1>
-    <form action="/submit" method="POST">
-        <!-- モード選択 -->
+    <form>
+        <label for="types">実験モードを選択:</label>
+        <select id="types" name="types">
+            <option value="observation">観察用</option>
+            <option value="experiment">実験用</option>
+        </select><br><br>
+
+        <label for="meta">メタサジェスチョンを選択:</label>
+        <select id="meta" name="meta">
+            <option value="meta_all">全て</option>
+            <option value="meta_genre">各ジャンルから1つずつ(4つ)</option>
+        </select><br><br>
+
         <label for="mode">モードを選択:</label>
-        <select id="mode" name="mode" onchange="toggleUserInput()">
-            <option value="bridging_teaching">橋渡教示あり</option>
+        <select id="mode" name="mode">
+            <option value="bridging_teaching_1">橋渡教示あり(1)</option>
+            <option value="bridging_teaching_2">橋渡教示あり(2)</option>
+            <option value="bridging_teaching_3">橋渡教示あり(3)</option>
+            <option value="bridging_teaching_4">橋渡教示あり(4)</option>
+            <option value="bridging_teaching_5">橋渡教示あり(5)</option>
+            <option value="bridging_teaching_6">橋渡教示あり(6)</option>
             <option value="no_bridging_teaching">橋渡教示なし</option>
             <option value="co_working">自由共同</option>
         </select><br><br>
 
-        <!-- ユーザー発言の入力欄（divでラップして表示/非表示を切り替える） -->
-        <div id="user_input_field">
-            <label for="user_input">ユーザーの発言:</label>
-            <textarea id="user_input" name="user_input" rows="4" cols="50"></textarea><br><br>
-        </div>
+        <label for="quiz">クイズを選択:</label>
+        <select id="quiz" name="quiz">
+            <option value="quiz1">クイズ1</option>
+            <option value="quiz2">クイズ2</option>
+            <option value="quiz3">クイズ3</option>
+            <option value="quiz4">クイズ4</option>
+            <option value="quiz5">クイズ5</option>
+            <option value="quiz6">クイズ6</option>
+        </select><br><br>
 
-        <button type="submit">送信</button>
+        <button type="button" onclick="triggerSpeechToText()">音声認識を開始</button>
     </form>
 </body>
 </html>

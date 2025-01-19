@@ -1,0 +1,235 @@
+Script started on Thu Jan  9 15:23:16 2025
+/Users/chikamitsumai/.zshrc:21: command not found: rbenv
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                     [0m[27m[24m[J(base) 
+[[1m[31mchikamitsumai@chikamitsumainoMacBook-Air[39m[0m:[32m~/b4/meta-suggestion[39m][36m[36m[33m+[new-branch][39m[39m
+[33m$[39m [K[?2004hexitpython app.py[?2004l
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (fsevents)
+ * Debugger is active!
+ * Debugger PIN: 120-766-033
+127.0.0.1 - - [09/Jan/2025 15:23:32] "GET / HTTP/1.1" 200 -
+実験モード: experiment
+Selected mode: no_bridging_teaching
+メタサジェスチョン： meta_all
+音声認識中...（終了するには Ctrl+C を押してください）
+音声認識を開始します...
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+認識結果:  さんはかかった
+user_input: さんはかかった
+image_data: question_3.png
+Sota:さんはかかった、というふうに考えているのですね。
+Sota:前の例を見て考えてもいいんではないでしょうか？
+history is  [{'elapsed_time': 42.669350147247314, 'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': 'さんはかかった', 'comprehension_problem': 0, 'confidence_prompt': 0, 'comprehension_level': 0, 'concreteness_problem': 0}]
+user_input_history is  []
+conversation is  [{'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': 'さんはかかった'}]
+result is  前の例を見て考えてもいいんではないでしょうか？
+127.0.0.1 - - [09/Jan/2025 15:31:47] "POST /speech_to_text HTTP/1.1" 200 -
+実験モード: experiment
+Selected mode: no_bridging_teaching
+メタサジェスチョン： meta_all
+音声認識中...（終了するには Ctrl+C を押してください）
+音声認識を開始します...
+何かを話してください...
+認識結果:  天山は関係ありますか
+user_input: 天山は関係ありますか
+image_data: question_3.png
+Sota:天山は関係ありますか、というふうに考えているのですね。
+Sota:どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？
+history is  [{'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 42.669350147247314, 'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': 'さんはかかった'}, {'elapsed_time': 6.183226108551025, 'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '天山は関係ありますか', 'comprehension_problem': 0, 'confidence_prompt': 0, 'comprehension_level': 0, 'concreteness_problem': 0}]
+user_input_history is  []
+conversation is  [{'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': 'さんはかかった'}, {'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '天山は関係ありますか'}]
+result is  どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？
+127.0.0.1 - - [09/Jan/2025 15:32:18] "POST /speech_to_text HTTP/1.1" 200 -
+実験モード: experiment
+Selected mode: no_bridging_teaching
+メタサジェスチョン： meta_all
+音声認識中...（終了するには Ctrl+C を押してください）
+音声認識を開始します...
+何かを話してください...
+認識結果:  さんは関係ありますか
+user_input: さんは関係ありますか
+image_data: question_3.png
+Sota:さんは関係ありますか、というふうに考えているのですね。
+Sota:もうちょっと先まで進んでから考えたらどうでしょう？
+history is  [{'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 42.669350147247314, 'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': 'さんはかかった'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 6.183226108551025, 'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '天山は関係ありますか'}, {'elapsed_time': 5.632045030593872, 'gpt': 'もうちょっと先まで進んでから考えたらどうでしょう？', 'user': 'さんは関係ありますか', 'comprehension_problem': 0, 'confidence_prompt': 0, 'comprehension_level': 0, 'concreteness_problem': 0}]
+user_input_history is  []
+conversation is  [{'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': 'さんはかかった'}, {'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '天山は関係ありますか'}, {'gpt': 'もうちょっと先まで進んでから考えたらどうでしょう？', 'user': 'さんは関係ありますか'}]
+result is  もうちょっと先まで進んでから考えたらどうでしょう？
+127.0.0.1 - - [09/Jan/2025 15:32:46] "POST /speech_to_text HTTP/1.1" 200 -
+実験モード: experiment
+Selected mode: no_bridging_teaching
+メタサジェスチョン： meta_all
+音声認識中...（終了するには Ctrl+C を押してください）
+音声認識を開始します...
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+認識結果:  向きは関係ありますか
+user_input: 向きは関係ありますか
+image_data: question_3.png
+Sota:向きは関係ありますか、というふうに考えているのですね。
+Sota:どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？
+history is  [{'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 42.669350147247314, 'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': 'さんはかかった'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 6.183226108551025, 'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '天山は関係ありますか'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 5.632045030593872, 'gpt': 'もうちょっと先まで進んでから考えたらどうでしょう？', 'user': 'さんは関係ありますか'}, {'elapsed_time': 30.757850170135498, 'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '向きは関係ありますか', 'comprehension_problem': 0, 'confidence_prompt': 0, 'comprehension_level': 0, 'concreteness_problem': 0}]
+user_input_history is  []
+conversation is  [{'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': 'さんはかかった'}, {'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '天山は関係ありますか'}, {'gpt': 'もうちょっと先まで進んでから考えたらどうでしょう？', 'user': 'さんは関係ありますか'}, {'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '向きは関係ありますか'}]
+result is  どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？
+127.0.0.1 - - [09/Jan/2025 15:33:42] "POST /speech_to_text HTTP/1.1" 200 -
+実験モード: experiment
+Selected mode: no_bridging_teaching
+メタサジェスチョン： meta_all
+音声認識中...（終了するには Ctrl+C を押してください）
+音声認識を開始します...
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+認識結果:  わからん
+user_input: わからん
+image_data: question_3.png
+Sota:わからん、というふうに考えているのですね。
+Sota:いくつか考えながら進めてはどうですか？
+history is  [{'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 42.669350147247314, 'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': 'さんはかかった'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 6.183226108551025, 'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '天山は関係ありますか'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 5.632045030593872, 'gpt': 'もうちょっと先まで進んでから考えたらどうでしょう？', 'user': 'さんは関係ありますか'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 30.757850170135498, 'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '向きは関係ありますか'}, {'elapsed_time': 193.47546887397766, 'gpt': 'いくつか考えながら進めてはどうですか？', 'user': 'わからん', 'comprehension_problem': 0, 'confidence_prompt': 0, 'comprehension_level': 0, 'concreteness_problem': 0}]
+user_input_history is  []
+conversation is  [{'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': 'さんはかかった'}, {'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '天山は関係ありますか'}, {'gpt': 'もうちょっと先まで進んでから考えたらどうでしょう？', 'user': 'さんは関係ありますか'}, {'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '向きは関係ありますか'}, {'gpt': 'いくつか考えながら進めてはどうですか？', 'user': 'わからん'}]
+result is  いくつか考えながら進めてはどうですか？
+127.0.0.1 - - [09/Jan/2025 15:37:15] "POST /speech_to_text HTTP/1.1" 200 -
+実験モード: experiment
+Selected mode: no_bridging_teaching
+メタサジェスチョン： meta_all
+音声認識中...（終了するには Ctrl+C を押してください）
+音声認識を開始します...
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+認識結果:  5と9がヒントになると思うのですが方針が立ちません
+user_input: 5と9がヒントになると思うのですが方針が立ちません
+image_data: question_3.png
+Sota:5と9がヒントになると思うのですが方針が立ちません、というふうに考えているのですね。
+Sota:前の例を見て考えてもいいんではないでしょうか？
+history is  [{'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 42.669350147247314, 'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': 'さんはかかった'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 6.183226108551025, 'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '天山は関係ありますか'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 5.632045030593872, 'gpt': 'もうちょっと先まで進んでから考えたらどうでしょう？', 'user': 'さんは関係ありますか'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 30.757850170135498, 'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '向きは関係ありますか'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 193.47546887397766, 'gpt': 'いくつか考えながら進めてはどうですか？', 'user': 'わからん'}, {'elapsed_time': 90.59996581077576, 'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': '5と9がヒントになると思うのですが方針が立ちません', 'comprehension_problem': 0, 'confidence_prompt': 0, 'comprehension_level': 0, 'concreteness_problem': 0}]
+user_input_history is  []
+conversation is  [{'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': 'さんはかかった'}, {'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '天山は関係ありますか'}, {'gpt': 'もうちょっと先まで進んでから考えたらどうでしょう？', 'user': 'さんは関係ありますか'}, {'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '向きは関係ありますか'}, {'gpt': 'いくつか考えながら進めてはどうですか？', 'user': 'わからん'}, {'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': '5と9がヒントになると思うのですが方針が立ちません'}]
+result is  前の例を見て考えてもいいんではないでしょうか？
+127.0.0.1 - - [09/Jan/2025 15:39:10] "POST /speech_to_text HTTP/1.1" 200 -
+実験モード: experiment
+Selected mode: no_bridging_teaching
+メタサジェスチョン： meta_all
+音声認識中...（終了するには Ctrl+C を押してください）
+音声認識を開始します...
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+認識結果:  おしまいですか
+user_input: おしまいですか
+image_data: question_3.png
+Sota:おしまいですか、というふうに考えているのですね。
+Sota:今までにない考え方をしてみたらどうでしょう？
+history is  [{'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 42.669350147247314, 'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': 'さんはかかった'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 6.183226108551025, 'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '天山は関係ありますか'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 5.632045030593872, 'gpt': 'もうちょっと先まで進んでから考えたらどうでしょう？', 'user': 'さんは関係ありますか'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 30.757850170135498, 'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '向きは関係ありますか'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 193.47546887397766, 'gpt': 'いくつか考えながら進めてはどうですか？', 'user': 'わからん'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 90.59996581077576, 'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': '5と9がヒントになると思うのですが方針が立ちません'}, {'elapsed_time': 215.19615006446838, 'gpt': '今までにない考え方をしてみたらどうでしょう？', 'user': 'おしまいですか', 'comprehension_problem': 0, 'confidence_prompt': 0, 'comprehension_level': 0, 'concreteness_problem': 0}]
+user_input_history is  []
+conversation is  [{'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': 'さんはかかった'}, {'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '天山は関係ありますか'}, {'gpt': 'もうちょっと先まで進んでから考えたらどうでしょう？', 'user': 'さんは関係ありますか'}, {'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '向きは関係ありますか'}, {'gpt': 'いくつか考えながら進めてはどうですか？', 'user': 'わからん'}, {'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': '5と9がヒントになると思うのですが方針が立ちません'}, {'gpt': '今までにない考え方をしてみたらどうでしょう？', 'user': 'おしまいですか'}]
+result is  今までにない考え方をしてみたらどうでしょう？
+127.0.0.1 - - [09/Jan/2025 15:43:07] "POST /speech_to_text HTTP/1.1" 200 -
+実験モード: experiment
+Selected mode: no_bridging_teaching
+メタサジェスチョン： meta_all
+音声認識中...（終了するには Ctrl+C を押してください）
+音声認識を開始します...
+何かを話してください...
+認識結果:  数字の数は関係ありますか
+user_input: 数字の数は関係ありますか
+image_data: question_3.png
+Sota:数字の数は関係ありますか、というふうに考えているのですね。
+Sota:このルールで全ての例がもれなく説明できますか？
+history is  [{'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 42.669350147247314, 'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': 'さんはかかった'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 6.183226108551025, 'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '天山は関係ありますか'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 5.632045030593872, 'gpt': 'もうちょっと先まで進んでから考えたらどうでしょう？', 'user': 'さんは関係ありますか'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 30.757850170135498, 'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '向きは関係ありますか'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 193.47546887397766, 'gpt': 'いくつか考えながら進めてはどうですか？', 'user': 'わからん'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 90.59996581077576, 'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': '5と9がヒントになると思うのですが方針が立ちません'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 215.19615006446838, 'gpt': '今までにない考え方をしてみたらどうでしょう？', 'user': 'おしまいですか'}, {'elapsed_time': 7.273972034454346, 'gpt': 'このルールで全ての例がもれなく説明できますか？', 'user': '数字の数は関係ありますか', 'comprehension_problem': 0, 'confidence_prompt': 0, 'comprehension_level': 0, 'concreteness_problem': 0}]
+user_input_history is  []
+conversation is  [{'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': 'さんはかかった'}, {'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '天山は関係ありますか'}, {'gpt': 'もうちょっと先まで進んでから考えたらどうでしょう？', 'user': 'さんは関係ありますか'}, {'gpt': 'どういうふうに考えたら、そのルールが正しいか確かめられると思いますか？', 'user': '向きは関係ありますか'}, {'gpt': 'いくつか考えながら進めてはどうですか？', 'user': 'わからん'}, {'gpt': '前の例を見て考えてもいいんではないでしょうか？', 'user': '5と9がヒントになると思うのですが方針が立ちません'}, {'gpt': '今までにない考え方をしてみたらどうでしょう？', 'user': 'おしまいですか'}, {'gpt': 'このルールで全ての例がもれなく説明できますか？', 'user': '数字の数は関係ありますか'}]
+result is  このルールで全ての例がもれなく説明できますか？
+127.0.0.1 - - [09/Jan/2025 15:43:37] "POST /speech_to_text HTTP/1.1" 200 -
+実験モード: experiment
+Selected mode: no_bridging_teaching
+メタサジェスチョン： meta_all
+音声認識中...（終了するには Ctrl+C を押してください）
+音声認識を開始します...
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+^C[1m[7m%[27m[1m[0m                                                                                                                                                                                                                     [0m[27m[24m[J(base) 
+[[1m[31mchikamitsumai@chikamitsumainoMacBook-Air[39m[0m:[32m~/b4/meta-suggestion[39m][36m[36m[33m+[new-branch][39m[39m
+[33m$[39m [K[?2004heexit[?2004l
+
+Script done on Thu Jan  9 15:45:08 2025

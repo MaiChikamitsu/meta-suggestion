@@ -1,4 +1,4 @@
-def bridging_teaching_mode(meta_suggestion, user_input):
+def co_working_mode(user_input):
     """
     GPTに送信するプロンプトを作成し、それを返す関数。
     
@@ -12,14 +12,10 @@ def bridging_teaching_mode(meta_suggestion, user_input):
     ユーザーは問題を解きながら以下のように悩んでいます。
     ユーザーの発言: "{user_input}"
     
-    ユーザーの発言を元に、ユーザーが何に悩んでいるのか考えてください。
-    その悩みを解決するために、以下のメタサジェスチョンの質問一覧から最も適切な質問を一つ選んでください。
+    ユーザーの発言を元に、問題について考え，その問題の答えを教えてください
 
-    メタサジェスチョンの質問一覧: {''.join(meta_suggestion)}
-    また，出力は以下のようなフォーマットで答えてください
-
-    メタサジェスチョン：
-    この質問が有効な理由：
+    問題の答え：
+    手がかり：
 
     """
 

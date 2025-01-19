@@ -1,0 +1,118 @@
+Script started on Fri Jan 10 11:37:12 2025
+/Users/chikamitsumai/.zshrc:21: command not found: rbenv
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                     [0m[27m[24m[J(base) 
+[[1m[31mchikamitsumai@chikamitsumainoMacBook-Air[39m[0m:[32m~/b4/meta-suggestion[39m][36m[36m[33m+[new-branch][39m[39m
+[33m$[39m [K[?2004hexitpython app.py[?2004l
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with watchdog (fsevents)
+ * Debugger is active!
+ * Debugger PIN: 120-766-033
+127.0.0.1 - - [10/Jan/2025 11:37:19] "GET / HTTP/1.1" 200 -
+実験モード: experiment
+Selected mode: no_bridging_teaching
+メタサジェスチョン： meta_all
+音声認識中...（終了するには Ctrl+C を押してください）
+音声認識を開始します...
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+認識結果:  答えられるかなー
+user_input: 答えられるかなー
+image_data: question_2.png
+Sota:答えられるかなー、というふうに考えているのですね。
+Sota:今までにない考え方をしてみたらどうでしょう？
+history is  [{'elapsed_time': 13.862004041671753, 'gpt': '今までにない考え方をしてみたらどうでしょう？', 'user': '答えられるかなー', 'comprehension_problem': 0, 'confidence_prompt': 0, 'comprehension_level': 0, 'concreteness_problem': 0}]
+user_input_history is  []
+conversation is  [{'gpt': '今までにない考え方をしてみたらどうでしょう？', 'user': '答えられるかなー'}]
+result is  今までにない考え方をしてみたらどうでしょう？
+127.0.0.1 - - [10/Jan/2025 11:45:34] "POST /speech_to_text HTTP/1.1" 200 -
+実験モード: experiment
+Selected mode: no_bridging_teaching
+メタサジェスチョン： meta_all
+音声認識中...（終了するには Ctrl+C を押してください）
+音声認識を開始します...
+何かを話してください...
+認識結果:  エムズ
+user_input: エムズ
+image_data: question_2.png
+Sota:エムズ、というふうに考えているのですね。
+Sota:どういうところに着目したのですか？
+history is  [{'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 13.862004041671753, 'gpt': '今までにない考え方をしてみたらどうでしょう？', 'user': '答えられるかなー'}, {'elapsed_time': 10.415389776229858, 'gpt': 'どういうところに着目したのですか？', 'user': 'エムズ', 'comprehension_problem': 0, 'confidence_prompt': 0, 'comprehension_level': 0, 'concreteness_problem': 0}]
+user_input_history is  []
+conversation is  [{'gpt': '今までにない考え方をしてみたらどうでしょう？', 'user': '答えられるかなー'}, {'gpt': 'どういうところに着目したのですか？', 'user': 'エムズ'}]
+result is  どういうところに着目したのですか？
+127.0.0.1 - - [10/Jan/2025 11:46:04] "POST /speech_to_text HTTP/1.1" 200 -
+実験モード: experiment
+Selected mode: no_bridging_teaching
+メタサジェスチョン： meta_all
+音声認識中...（終了するには Ctrl+C を押してください）
+音声認識を開始します...
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+認識結果:  わー 割り算をしていますか
+user_input: わー 割り算をしていますか
+image_data: question_2.png
+Sota:わー 割り算をしていますか、というふうに考えているのですね。
+Sota:ここに書いた答え以外でも当たっている答えを考えてみてはどうですか？
+history is  [{'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 13.862004041671753, 'gpt': '今までにない考え方をしてみたらどうでしょう？', 'user': '答えられるかなー'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 10.415389776229858, 'gpt': 'どういうところに着目したのですか？', 'user': 'エムズ'}, {'elapsed_time': 25.91909384727478, 'gpt': 'ここに書いた答え以外でも当たっている答えを考えてみてはどうですか？', 'user': 'わー 割り算をしていますか', 'comprehension_problem': 0, 'confidence_prompt': 0, 'comprehension_level': 0, 'concreteness_problem': 0}]
+user_input_history is  []
+conversation is  [{'gpt': '今までにない考え方をしてみたらどうでしょう？', 'user': '答えられるかなー'}, {'gpt': 'どういうところに着目したのですか？', 'user': 'エムズ'}, {'gpt': 'ここに書いた答え以外でも当たっている答えを考えてみてはどうですか？', 'user': 'わー 割り算をしていますか'}]
+result is  ここに書いた答え以外でも当たっている答えを考えてみてはどうですか？
+127.0.0.1 - - [10/Jan/2025 11:46:54] "POST /speech_to_text HTTP/1.1" 200 -
+実験モード: experiment
+Selected mode: no_bridging_teaching
+メタサジェスチョン： meta_all
+音声認識中...（終了するには Ctrl+C を押してください）
+音声認識を開始します...
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+音声を認識できませんでした。
+何かを話してください...
+認識結果:  割り切れるときは割って荒れない時は かけたり 他の計算
+user_input: 割り切れるときは割って荒れない時は かけたり 他の計算
+image_data: question_2.png
+Sota:割り切れるときは割って荒れない時は かけたり 他の計算、というふうに考えているのですね。
+Sota:もう一回説明をしてもらえますか？
+history is  [{'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 13.862004041671753, 'gpt': '今までにない考え方をしてみたらどうでしょう？', 'user': '答えられるかなー'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 10.415389776229858, 'gpt': 'どういうところに着目したのですか？', 'user': 'エムズ'}, {'comprehension_level': 0, 'comprehension_problem': 0, 'concreteness_problem': 0, 'confidence_prompt': 0, 'elapsed_time': 25.91909384727478, 'gpt': 'ここに書いた答え以外でも当たっている答えを考えてみてはどうですか？', 'user': 'わー 割り算をしていますか'}, {'elapsed_time': 26.074431896209717, 'gpt': 'もう一回説明をしてもらえますか？', 'user': '割り切れるときは割って荒れない時は かけたり 他の計算', 'comprehension_problem': 0, 'confidence_prompt': 0, 'comprehension_level': 0, 'concreteness_problem': 0}]
+user_input_history is  []
+conversation is  [{'gpt': '今までにない考え方をしてみたらどうでしょう？', 'user': '答えられるかなー'}, {'gpt': 'どういうところに着目したのですか？', 'user': 'エムズ'}, {'gpt': 'ここに書いた答え以外でも当たっている答えを考えてみてはどうですか？', 'user': 'わー 割り算をしていますか'}, {'gpt': 'もう一回説明をしてもらえますか？', 'user': '割り切れるときは割って荒れない時は かけたり 他の計算'}]
+result is  もう一回説明をしてもらえますか？
+127.0.0.1 - - [10/Jan/2025 11:47:44] "POST /speech_to_text HTTP/1.1" 200 -
+実験モード: experiment
+Selected mode: no_bridging_teaching
+メタサジェスチョン： meta_all
+音声認識中...（終了するには Ctrl+C を押してください）
+音声認識を開始します...
+何かを話してください...
+認識結果:  割り切れる時は終わった答えを書いた 下に書いていて 割れない時はかけてそれの
+user_input: 割り切れる時は終わった答えを書いた 下に書いていて 割れない時はかけてそれの
+image_data: question_2.png
+Exception in thread Thread-21 (sota_motion):
+Traceback (most recent call last):
+  File "/opt/anaconda3/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/opt/anaconda3/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Users/chikamitsumai/b4/meta-suggestion/app.py", line 489, in sota_motion
+    sock.sendto(message.encode("utf-8"), serv_address)  # サーバーに送信
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [Errno 65] No route to host
+^C[1m[7m%[27m[1m[0m                                                                                                                                                                                                                     [0m[27m[24m[J(base) 
+[[1m[31mchikamitsumai@chikamitsumainoMacBook-Air[39m[0m:[32m~/b4/meta-suggestion[39m][36m[36m[33m+[new-branch][39m[39m
+[33m$[39m [K[?2004heexit][?2004l
+zsh: command not found: exit]
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                     [0m[27m[24m[J(base) 
+[[1m[31mchikamitsumai@chikamitsumainoMacBook-Air[39m[0m:[32m~/b4/meta-suggestion[39m][36m[36m[33m+[new-branch][39m[39m
+[33m$[39m [K[?2004heexit[?2004l
+
+Script done on Fri Jan 10 11:54:15 2025

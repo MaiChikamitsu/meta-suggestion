@@ -1,13 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>結果</title>
+    <title>メタサジェスチョン結果</title>
+    <style>
+        /* UIのスタイル */
+        #history {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .entry {
+            margin-bottom: 15px;
+        }
+        .user {
+            background-color: #f0f0f0;
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .gpt {
+            background-color: #e0e0ff;
+            padding: 12px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        hr {
+            margin: 20px 0;
+            border: 1px solid #ddd;
+        }
+        h1 {
+            text-align: center;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        form {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>結果</h1>
-    <pre>{{ result }}</pre>
-    <a href="/">戻る</a>
+    <h1>メタサジェスチョン結果</h1>
+
+    <div id="history">
+        <h2>会話履歴</h2>
+
+        <!-- Jinja2でhistoryがある場合、履歴を表示 -->
+        {% if history %}
+            {% for entry in history %}
+                <div class="entry user"><strong>ユーザー:</strong> {{ entry.user }}</div>
+                <div class="entry gpt"><strong>メタサジェスチョン:</strong> {{ entry.gpt }}</div>
+                <div class="entry"><strong>経過時間:</strong> {{ entry.elapsed_time }} 秒</div>
+                <div class="entry"><strong>問題文の理解度:</strong> {{ entry.comprehension_problem }}</div>
+                <div class="entry"><strong>確信度:</strong> {{ entry.confidence_prompt }}</div>
+                <div class="entry"><strong>理解度:</strong> {{ entry.comprehension_level }}</div>
+                <div class="entry"><strong>プランの具体性:</strong> {{ entry.concreteness_problem }}</div>
+                <hr>
+            {% endfor %}
+        {% else %}
+            <div>履歴はありません。</div>
+        {% endif %}
+    </div>
+
+    <div id="mode">
+        <h2>モード: {{ mode }}</h2>
+    </div>
+    <div id="quiz">
+        <h2>クイズ: {{ quiz }}</h2>
+    </div>
+    <div id="types">
+        <h2>実験モード: {{ types }}</h2>
+    </div>
+    <div id="meta">
+        <h2>メタサジェスチョン: {{ meta }}</h2>
+    </div>
+
+    <!-- 音声認識を終了するボタン -->
+    <button onclick="stopSpeechRecognition()">音声認識を終了</button><br><br>
+
+    <!-- リセットボタン -->
+    <form action="/reset" method="POST">
+        <button type="submit">履歴をリセット</button>
+    </form>
+
+    <!-- 自動送信用フォーム -->
+    <form id="auto-submit-form" action="/speech_to_text" method="POST" style="display: none;">
+        <input type="hidden" name="mode" value="{{ mode }}">
+        <input type="hidden" name="quiz" value="{{ quiz }}">
+        <input type="hidden" name="types" value="{{ types }}">
+        <input type="hidden" name="meta" value="{{ meta }}">
+    </form>    
+
+    <script>
+        // ページロード時に自動で/speech_to_textにPOSTリクエストを送る処理
+        window.onload = function() {
+            // フォームを自動的に送信
+            document.getElementById("auto-submit-form").submit();
+
+            document.getElementById("meta").scrollIntoView({ behavior: "smooth" })
+        };
+
+        // 音声認識を停止する処理
+        function stopSpeechRecognition() {
+            alert("音声認識を終了しました。");
+        }
+    </script>
 </body>
 </html>
