@@ -1,47 +1,0 @@
-Script started on Wed Jan  8 14:18:27 2025
-/Users/chikamitsumai/.zshrc:21: command not found: rbenv
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                                     [0m[27m[24m[J(base) 
-[[1m[31mchikamitsumai@chikamitsumainoMacBook-Air[39m[0m:[32m~/b4/meta-suggestion[39m][36m[36m[33m+[new-branch][39m[39m
-[33m$[39m [K[?2004hexitpython app.py          p  python app.py          p  python app.py          p  eexit[?2004l
-
-Script done on Thu Jan  9 14:08:14 2025
- on http://127.0.0.1:5000
-[33mPress CTRL+C to quit[0m
- * Restarting with watchdog (fsevents)
- * Debugger is active!
- * Debugger PIN: 120-766-033
-127.0.0.1 - - [08/Jan/2025 14:18:39] "GET / HTTP/1.1" 200 -
-127.0.0.1 - - [08/Jan/2025 14:18:39] "GET / HTTP/1.1" 200 -
-実験モード: experiment
-Selected mode: no_bridging_teaching
-メタサジェスチョン： meta_all
-音声認識中...（終了するには Ctrl+C を押してください）
-音声認識を開始します...
-何かを話してください...
-音声を認識できませんでした。
-何かを話してください...
-認識結果:  こんにちは こんにちは
-user_input: こんにちは こんにちは
-image_data: question_1.png
-Sota:こんにちは こんにちは、というふうに考えているのですね。
-Sota:どういうところに着目したのですか？
-history is  [{'elapsed_time': 15.587216854095459, 'gpt': 'どういうところに着目したのですか？', 'user': 'こんにちは こんにちは', 'comprehension_problem': 0, 'confidence_prompt': 0, 'comprehension_level': 0, 'concreteness_problem': 0}]
-user_input_history is  []
-conversation is  [{'gpt': 'どういうところに着目したのですか？', 'user': 'こんにちは こんにちは'}]
-result is  どういうところに着目したのですか？
-127.0.0.1 - - [08/Jan/2025 14:19:26] "POST /speech_to_text HTTP/1.1" 200 -
-実験モード: experiment
-Selected mode: no_bridging_teaching
-メタサジェスチョン： meta_all
-音声認識中...（終了するには Ctrl+C を押してください）
-音声認識を開始します...
-何かを話してください...
-認識結果:  音声 大丈夫
-user_input: 音声 大丈夫
-image_data: question_1.png
-^CSota:音声 大丈夫、というふうに考えているのですね。
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                                     [0m[27m[24m[J(base) 
-[[1m[31mchikamitsumai@chikamitsumainoMacBook-Air[39m[0m:[32m~/b4/meta-suggestion[39m][36m[36m[33m+[new-branch][39m[39m
-[33m$[39m [K[?2004heexit[?2004l
-
-Script done on Wed Jan  8 14:19:54 2025
