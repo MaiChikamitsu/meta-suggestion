@@ -50,7 +50,7 @@ client = OpenAI(api_key=os.environ.get('OPENAI_API'))
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # sotaくん
-IP = "192.168.1.128"
+IP = "192.168.1.85"
 PORT = 9980
 serv_address = (IP, PORT)
 default_posture = {"Waist_Y": 0, "RShoulder_P": -900, "RElbow_P": 0, "LShoulder_P": 900, "LElbow_P": 0, "Head_Y": 0, "Head_P": 0, "Head_R": 0}
