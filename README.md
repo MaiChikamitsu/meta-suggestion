@@ -55,4 +55,4 @@ pip install -r requirements.txt
 
 ## 🙌 貢献
 
-バグ報告、提案、機能追加の提案など歓迎します。Pull Request をお送りください。
+順次リファクタリングしています
